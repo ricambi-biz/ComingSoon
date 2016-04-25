@@ -2,13 +2,25 @@
 <html>
 <head>
 <style>
-body {
-    background-image: url("comingsoon.png"); 
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #6F717B;
+if(navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        ){
+ background-image: url("comingsoonmobile.png");
+ background-size: contain;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-color: #6F717B;
+}
+    body {
+        background-image: url("comingsoon.png"); 
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #6F717B;
 }
 </style>
 </head>
