@@ -2,18 +2,17 @@
 <html>
 <head>
 <style>
-if(navigator.userAgent.match(/Android/i) ||
-        navigator.userAgent.match(/webOS/i) ||
-        navigator.userAgent.match(/iPhone/i) ||
-        navigator.userAgent.match(/iPod/i) ||
-        ){
- background-image: url("comingsoonmobile.png");
- background-size: cover;
- background-attachment: fixed;
- background-repeat: no-repeat;
- background-position: center center;
- background-color: #6F717B;
+@media only screen and (max-device-width: 480px) {
+  body { 
+    background: url(comingsoonmobile.png); 
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #6F717B;
+    background-position: center center;
+  }
 }
+@media only screen and (min-device-width: 481px) {
     body {
         background-image: url("comingsoon.png"); 
         background-size: contain;
@@ -21,6 +20,7 @@ if(navigator.userAgent.match(/Android/i) ||
         background-repeat: no-repeat;
         background-position: center center;
         background-color: #6F717B;
+        }
 }
 </style>
 </head>
